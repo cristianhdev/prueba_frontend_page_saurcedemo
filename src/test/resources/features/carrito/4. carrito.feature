@@ -1,5 +1,5 @@
 #language:es
-@CarritoSuite
+@CarritoSuite @Regression
 Característica: Carrito de compras
 
   Antecedentes: Login usuario exitoso.

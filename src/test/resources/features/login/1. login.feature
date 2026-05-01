@@ -1,5 +1,5 @@
 #language:es
-@LoginSuite
+@LoginSuite @Regression
 Característica: Login Usuario
 
 

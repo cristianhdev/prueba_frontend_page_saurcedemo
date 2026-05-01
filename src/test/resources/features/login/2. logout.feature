@@ -1,5 +1,5 @@
 #language:es
-@LoginOutSuite
+@LoginOutSuite @Regression
 Característica: LogOut Usuario
 
   Antecedentes: Login usuario exitoso.

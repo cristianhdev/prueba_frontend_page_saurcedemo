@@ -1,5 +1,5 @@
 #language:es
-@ProductoSuite
+@ProductoSuite @smoke
 Característica: Compra completa producto
 
   Antecedentes: Login usuario exitoso.

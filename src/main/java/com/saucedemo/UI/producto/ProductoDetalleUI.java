@@ -6,7 +6,7 @@ import net.thucydides.core.annotations.findby.By;
 public class ProductoDetalleUI {
 
 
-    public static final Target LBL_PAGINA_DETALLE_PRODUCTO_VALIDACION = Target.the("Label confirmación pagina detalle").located(By.cssSelector("[data-test='back-to-products']"));
+    public static final Target LBL_PAGINA_DETALLE_PRODUCTO_VALIDACION = Target.the("Label confirmación pagina productos").located(By.cssSelector("[data-test='back-to-products']"));
 
     public static final Target ITEM_PRODUCTO_TITULO_DETALLE = Target.the(" producto titulo detalle").located(By.cssSelector("[data-test='inventory-item-name']"));
 

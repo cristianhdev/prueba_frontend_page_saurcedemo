@@ -1,5 +1,5 @@
 #language:es
-@DetallesProductoSuite
+@DetallesProductoSuite @Regression
 Característica: Ver detalles del producto
 
   Antecedentes: Login usuario exitoso.

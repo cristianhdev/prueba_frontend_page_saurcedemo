@@ -1,4 +1,4 @@
-package com.saucedemo.UI;
+package com.saucedemo.UI.usuario;
 
 import net.serenitybdd.annotations.DefaultUrl;
 import net.serenitybdd.screenplay.targets.Target;

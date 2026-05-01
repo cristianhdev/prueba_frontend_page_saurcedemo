@@ -1,5 +1,5 @@
 #language:es
-@LoginSuite
+@LoginOutSuite
 Característica: LogOut Usuario
 
   Antecedentes: Login usuario exitoso.
@@ -9,6 +9,6 @@ Característica: LogOut Usuario
       | standard_user | secret_sauce |
 
   @LogOutUsuario
-  Escenario: Usuario cierra la sesion
+  Escenario: Usuario cierra sesion
   Cuando cierra la sesion
   Entonces se deber visualizar la pagina de inicio

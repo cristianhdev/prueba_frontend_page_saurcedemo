@@ -3,6 +3,7 @@ package com.saucedemo.helpers;
 public class MensajesValidacion {
 
     public static String mensajeValidacionLogin = "Swag Labs";
+    public static String mensajeValidacionPaginaProductos = "Back to products";
 
     public static String mensajeValidacionInputUserNameRequerido = "Epic sadface: Username is required";
 

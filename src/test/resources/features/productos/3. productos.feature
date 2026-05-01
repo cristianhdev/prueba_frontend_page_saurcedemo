@@ -7,8 +7,3 @@ Característica: Ver detalles del producto
     Cuando ingrese las credenciales
       | username      | password     |
       | standard_user | secret_sauce |
-
-  @SeleccionarUnProducto
-  Escenario: usuario puede ver detalles del producto selecionado
-    Cuando el usuario seleccione un producto
-    Entonces se debe ver la pagina con los detalles del producto

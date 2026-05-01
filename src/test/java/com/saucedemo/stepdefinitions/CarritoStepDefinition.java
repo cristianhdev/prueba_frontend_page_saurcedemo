@@ -58,16 +58,4 @@ public class CarritoStepDefinition {
                 seeThat("Valida que el producto este en el carrito de compra ", ValidarTexto.onValidar(ITEM_PRODUCTO_TITULO_CARRITO), not(containsString(producto.getTituloProducto())))
         );
     }
-
-    //Mas producto al carrito
-    @Cuando("el usuario seleccione más de un producto")
-    public void elUsuarioSeleccioneMásDeUnProducto(DataTable productos) {
-
-    }
-
-    @Entonces("se debe ver todos los productos en el carrito")
-    public void seDebeVerTodosLosProductosEnElCarrito() {
-
-    }
-
 }

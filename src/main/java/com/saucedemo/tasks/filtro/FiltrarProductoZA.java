@@ -2,7 +2,6 @@ package com.saucedemo.tasks.filtro;
 
 import com.saucedemo.interactions.ClickElemento;
 import com.saucedemo.interactions.SelecionOpcion;
-import com.saucedemo.questions.ProductosDesc;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;

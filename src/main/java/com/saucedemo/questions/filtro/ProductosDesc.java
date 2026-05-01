@@ -1,4 +1,4 @@
-package com.saucedemo.questions;
+package com.saucedemo.questions.filtro;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
@@ -9,20 +9,20 @@ import java.util.List;
 
 import static com.saucedemo.UI.producto.ProductosUI.ITEM_PRODUCTO;
 
-public class ProductosAsc implements Question<List<String>> {
+public class ProductosDesc implements Question<List<String>> {
+
     @Override
     public List<String> answeredBy(Actor actor) {
 
      List<String> nombresOrdenados = (List<String>) Text.ofEach(ITEM_PRODUCTO).answeredBy(actor);
 
         // ordenar ascendente
-      Collections.sort(nombresOrdenados,Collections.reverseOrder());
+      Collections.sort(nombresOrdenados);
 
         return nombresOrdenados;
-
     }
 
-    public static ProductosAsc lista() {
-        return new ProductosAsc();
+    public static ProductosDesc lista() {
+        return new ProductosDesc();
     }
 }

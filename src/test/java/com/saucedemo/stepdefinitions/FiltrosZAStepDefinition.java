@@ -1,14 +1,11 @@
 package com.saucedemo.stepdefinitions;
 
-import com.saucedemo.questions.ProductosDesc;
 import com.saucedemo.questions.ValidarTexto;
 import com.saucedemo.tasks.filtro.FiltrarProductoZA;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.questions.Text;
-
-import java.util.List;
 
 import static com.saucedemo.UI.producto.ProductosUI.ITEM_PRODUCTO;
 import static com.saucedemo.UI.producto.ProductosUI.LBL_PAGINA_PRODUCTOS_VALIDACION;

@@ -11,6 +11,7 @@ import static com.saucedemo.UI.carrito.CarritoUI.BTN_ELIMINAR_PRODUCTO_CARRITO;
 import static com.saucedemo.UI.carrito.CarritoUI.LBL_PAGINA_CARRITO_VALIDACION;
 import static com.saucedemo.UI.producto.ProductoDetalleUI.BTN_AGREGAR_PRODUCTO_CARRITO;
 import static com.saucedemo.UI.producto.ProductoDetalleUI.ICON_CARRITO_COMPRA;
+import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class EliminarCarrito implements Task {
@@ -18,7 +19,7 @@ public class EliminarCarrito implements Task {
     private String productoNombre = "";
 
     public EliminarCarrito(String productoNombre) {
-        this.productoNombre = productoNombre;
+        this.productoNombre = theActorInTheSpotlight().recall("producto_seleccionado");;
     }
 
     @Override

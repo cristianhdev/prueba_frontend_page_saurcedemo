@@ -13,5 +13,7 @@ Característica: Compra completa producto
       Cuando el usuario seleccione un producto
       Y lo agrega al carrito de compras
       Y complete el formulario de compra
+        | nombre | apellido | codigopostal |
+        | Lucas  | Martinez | 0000036      |
       Entonces se debe ver el mensaje de confirmación del pedido
 

@@ -1,4 +1,4 @@
-package com.saucedemo.tasks.usuario;
+package com.saucedemo.tasks.login;
 
 import com.saucedemo.interactions.ClickElemento;
 import com.saucedemo.interactions.EnterElemento;
@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 
-import static com.saucedemo.UI.usuario.LoginPageUI.*;
+import static com.saucedemo.UI.login.LoginPageUI.*;
 
 public class LoginUsuario implements Task {
 

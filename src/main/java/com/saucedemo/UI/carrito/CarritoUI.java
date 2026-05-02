@@ -10,7 +10,7 @@ public class CarritoUI {
 
     public static final Target LBL_PAGINA_CARRITO_VALIDACION = Target.the("Label confirmación pagina carrito").located(By.cssSelector("[data-test='title']"));
 
-    public static final Target BTN_ELIMINAR_PRODUCTO_CARRITO = Target.the("eliminar producto carrito").located(By.cssSelector("[data-test='remove-sauce-labs-backpack']"));
+    public static final Target BTN_ELIMINAR_PRODUCTO_CARRITO = Target.the("eliminar producto carrito").located(By.xpath("//*[contains(text(),'Remove')]"));
 
     public static final Target BTN_CHECKOUT_CARRITO = Target.the("checkout carrito").located(By.cssSelector("[data-test='checkout']"));
 

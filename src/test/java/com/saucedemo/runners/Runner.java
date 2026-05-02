@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/saucedemo/stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = " @FiltrarPorPrecioDesc or @FiltrarPorPrecioAsc",
+        //tags = "@RemoverProductosDelCarrito",
         plugin= {
                 "pretty",
                 "html:target/site/cucumber-report.html",

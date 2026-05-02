@@ -1,9 +1,9 @@
-package com.saucedemo.stepdefinitions;
+package com.saucedemo.stepdefinitions.login;
 
 import com.saucedemo.questions.ValidarTexto;
-import com.saucedemo.tasks.usuario.AbrirNavegador;
-import com.saucedemo.tasks.usuario.LogOutUsuario;
-import com.saucedemo.tasks.usuario.LoginUsuario;
+import com.saucedemo.tasks.login.AbrirNavegador;
+import com.saucedemo.tasks.login.LogOutUsuario;
+import com.saucedemo.tasks.login.LoginUsuario;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.Cuando;
@@ -18,8 +18,8 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.Map;
 
-import static com.saucedemo.UI.usuario.HomePageUI.LBL_LOGOUT_VALIDACION;
-import static com.saucedemo.UI.usuario.LoginPageUI.*;
+import static com.saucedemo.UI.login.HomePageUI.LBL_LOGOUT_VALIDACION;
+import static com.saucedemo.UI.login.LoginPageUI.*;
 import static com.saucedemo.helpers.MensajesValidacion.mensajeValidacionLogin;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;

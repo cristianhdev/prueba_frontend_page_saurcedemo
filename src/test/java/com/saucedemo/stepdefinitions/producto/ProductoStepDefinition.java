@@ -1,4 +1,4 @@
-package com.saucedemo.stepdefinitions;
+package com.saucedemo.stepdefinitions.producto;
 
 import com.saucedemo.models.Producto;
 import com.saucedemo.questions.ValidarTexto;

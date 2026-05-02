@@ -1,4 +1,4 @@
-package com.saucedemo.tasks.usuario;
+package com.saucedemo.tasks.login;
 
 import com.saucedemo.interactions.ClickElemento;
 import net.serenitybdd.screenplay.Actor;
@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import static com.saucedemo.UI.usuario.HomePageUI.*;
+import static com.saucedemo.UI.login.HomePageUI.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class LogOutUsuario implements Task {

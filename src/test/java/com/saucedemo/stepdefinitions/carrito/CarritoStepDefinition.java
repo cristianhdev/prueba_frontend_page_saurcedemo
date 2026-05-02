@@ -1,10 +1,9 @@
-package com.saucedemo.stepdefinitions;
+package com.saucedemo.stepdefinitions.carrito;
 
 import com.saucedemo.models.Producto;
 import com.saucedemo.questions.ValidarTexto;
 import com.saucedemo.tasks.carrito.AgregarCarrito;
 import com.saucedemo.tasks.carrito.EliminarCarrito;
-import io.cucumber.datatable.DataTable;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 
@@ -39,12 +38,15 @@ public class CarritoStepDefinition {
         );
     }
 
+
+
     //Eliminar Producto Carrito
-    @Cuando("luego elimine el producto")
-    public void luegoElimineElProducto() {
+    @Cuando("lo agrega al carrito de compras y luego lo elimine")
+    public void loAgregaAlCarritoDeComprasYLuegoLoElimina() {
         Producto producto = theActorInTheSpotlight().recall("producto_seleccionado");
 
         theActorInTheSpotlight().attemptsTo(
+                AgregarCarrito.onAgregarProducto(producto.getTituloProducto()),
                 EliminarCarrito.onEliminarProducto(producto.getTituloProducto())
         );
     }

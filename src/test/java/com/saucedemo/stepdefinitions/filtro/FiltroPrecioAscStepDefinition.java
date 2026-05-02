@@ -1,7 +1,6 @@
-package com.saucedemo.stepdefinitions;
+package com.saucedemo.stepdefinitions.filtro;
 
 import com.saucedemo.tasks.filtro.FiltroProductoPrecioAsc;
-import com.saucedemo.tasks.filtro.FiltroProductoPrecioDesc;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.Actor;

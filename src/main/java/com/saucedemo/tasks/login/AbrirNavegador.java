@@ -1,6 +1,6 @@
-package com.saucedemo.tasks.usuario;
+package com.saucedemo.tasks.login;
 
-import com.saucedemo.UI.usuario.HomePageUI;
+import com.saucedemo.UI.login.HomePageUI;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;

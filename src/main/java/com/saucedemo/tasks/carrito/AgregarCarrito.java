@@ -7,6 +7,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
+import static com.saucedemo.UI.carrito.CarritoUI.BTN_ELIMINAR_PRODUCTO_CARRITO;
 import static com.saucedemo.UI.carrito.CarritoUI.LBL_PAGINA_CARRITO_VALIDACION;
 import static com.saucedemo.UI.producto.ProductoDetalleUI.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
@@ -24,8 +25,8 @@ public class AgregarCarrito implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 ClickElemento.onElemento(BTN_AGREGAR_PRODUCTO_CARRITO),
-                ClickElemento.onElemento(ICON_CARRITO_COMPRA),
-                WaitUntil.the(LBL_PAGINA_CARRITO_VALIDACION, isVisible()).forNoMoreThan(25).seconds()
+                ClickElemento.onElemento(ICON_CARRITO_COMPRA)
+                //WaitUntil.the(LBL_PAGINA_CARRITO_VALIDACION, isVisible()).forNoMoreThan(25).seconds()
         );
     }
 

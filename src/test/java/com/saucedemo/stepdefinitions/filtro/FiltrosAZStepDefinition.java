@@ -1,4 +1,4 @@
-package com.saucedemo.stepdefinitions;
+package com.saucedemo.stepdefinitions.filtro;
 
 import com.saucedemo.tasks.filtro.FiltrarProductoAZ;
 import com.saucedemo.tasks.filtro.FiltrarProductoZA;

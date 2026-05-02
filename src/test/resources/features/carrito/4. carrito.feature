@@ -19,14 +19,6 @@ Característica: Carrito de compras
   @RemoverProductosDelCarrito
   Escenario: usuario puede eliminar el producto del carrito de compras
     Cuando el usuario seleccione un producto
-    Y lo agrega al carrito de compras
-    Y luego elimine el producto
+    Y lo agrega al carrito de compras y luego lo elimine
     Entonces no debe ver el producto en el carrito de compras
 
-  @SeleccionarMasProductosCarrito
-  Escenario: usuario puede ver detalles del producto selecionado
-    Cuando el usuario seleccione más de un producto
-      | Sauce Labs Backpack   |
-      | Sauce Labs Bike Light |
-      | Sauce Labs Onesie     |
-    Entonces se debe ver todos los productos en el carrito

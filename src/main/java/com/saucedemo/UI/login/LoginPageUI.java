@@ -1,4 +1,4 @@
-package com.saucedemo.UI.usuario;
+package com.saucedemo.UI.login;
 
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.findby.By;

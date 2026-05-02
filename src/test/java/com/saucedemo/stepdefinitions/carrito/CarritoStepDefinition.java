@@ -1,7 +1,6 @@
 package com.saucedemo.stepdefinitions.carrito;
 
 import com.saucedemo.models.Producto;
-import com.saucedemo.questions.ValidarTexto;
 import com.saucedemo.tasks.carrito.AgregarCarrito;
 import com.saucedemo.tasks.carrito.EliminarCarrito;
 import com.saucedemo.validations.carrito.ValidacionCarrito;
@@ -31,16 +30,15 @@ public class CarritoStepDefinition {
     }
 
     //Eliminar Producto Carrito
-    @Cuando("lo agrega al carrito de compras y luego lo elimine")
-    public void loAgregaAlCarritoDeComprasYLuegoLoElimina() {
+
+    @Cuando("luego elimine el producto")
+    public void luegoEliminaElProducto() {
 
         Producto producto= theActorInTheSpotlight().recall("producto_seleccionado");
 
-        String productoTitulo = producto.getTituloProducto();
 
         theActorInTheSpotlight().attemptsTo(
-                AgregarCarrito.onAgregarProducto(productoTitulo),
-                EliminarCarrito.onEliminarProducto(productoTitulo)
+                EliminarCarrito.onEliminarProducto(producto.getTituloProducto())
         );
     }
 

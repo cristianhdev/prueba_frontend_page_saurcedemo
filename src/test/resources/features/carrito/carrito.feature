@@ -1,5 +1,5 @@
 #language:es
-@CarritoSuite @Regression
+@carrito-test @regresion
 Característica: Carrito de compras
 
   Antecedentes: Login usuario exitoso.
@@ -9,16 +9,17 @@ Característica: Carrito de compras
       | standard_user | secret_sauce |
 
 
-  @AgregarProductoAlCarritoDeCompras
+  @agregar-producto
   Escenario: usuario puede agregar producto al carrito de compras
     Cuando el usuario seleccione un producto
     Y lo agrega al carrito de compras
     Entonces se debe ver el producto en el carrito de compras
 
 
-  @RemoverProductosDelCarrito
+  @remover-producto
   Escenario: usuario puede eliminar el producto del carrito de compras
     Cuando el usuario seleccione un producto
-    Y lo agrega al carrito de compras y luego lo elimine
+    Y lo agrega al carrito de compras
+    Y luego elimine el producto
     Entonces no debe ver el producto en el carrito de compras
 

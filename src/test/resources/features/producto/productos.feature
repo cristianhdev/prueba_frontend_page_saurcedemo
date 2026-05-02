@@ -1,5 +1,5 @@
 #language:es
-@DetallesProductoSuite @Regression
+@productos @regression
 Característica: Ver detalles del producto
 
   Antecedentes: Login usuario exitoso.
@@ -7,3 +7,8 @@ Característica: Ver detalles del producto
     Cuando ingrese las credenciales
       | username      | password     |
       | standard_user | secret_sauce |
+
+  @select-product
+  Escenario: usuario puede ver detalles del producto selecionado
+    Cuando el usuario seleccione un producto
+    Entonces se debe ver la pagina con los detalles del producto

@@ -8,8 +8,7 @@ import static com.saucedemo.UI.carrito.CarritoUI.ITEM_PRODUCTO_TITULO_CARRITO;
 import static com.saucedemo.UI.carrito.CarritoUI.LBL_PAGINA_CARRITO_VALIDACION;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.*;
 
 public class ValidacionCarrito {
 
@@ -30,7 +29,7 @@ public class ValidacionCarrito {
 
         theActorInTheSpotlight().should(
                 seeThat("Valida que se muestre la pagina de carrito", ValidarTexto.onValidar(LBL_PAGINA_CARRITO_VALIDACION), equalTo("Your Cart")),
-                seeThat("Valida que el producto este en el carrito de compra ", ValidarTexto.onValidar(ITEM_PRODUCTO_TITULO_CARRITO), containsString(producto.getTituloProducto()))
+                seeThat("Valida que el producto este en el carrito de compra ", ValidarTexto.onValidar(ITEM_PRODUCTO_TITULO_CARRITO), not(containsString(producto.getTituloProducto())))
         );
     }
 }

@@ -1,5 +1,5 @@
 #language:es
-@LoginOutSuite @Regression
+ @regression
 Característica: LogOut Usuario
 
   Antecedentes: Login usuario exitoso.
@@ -8,7 +8,7 @@ Característica: LogOut Usuario
       | username      | password     |
       | standard_user | secret_sauce |
 
-  @LogOutUsuario
+  @login-out
   Escenario: Usuario cierra sesion
   Cuando cierra la sesion
   Entonces se deber visualizar la pagina de inicio

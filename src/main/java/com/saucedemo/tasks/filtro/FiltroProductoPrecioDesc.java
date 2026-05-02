@@ -7,7 +7,8 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.questions.Text;
 
-import static com.saucedemo.UI.producto.ProductosUI.*;
+import static com.saucedemo.UI.producto.ProductosUI.ITEMS_PRECIOS;
+import static com.saucedemo.UI.producto.ProductosUI.SELECT_PRODUCTO_FILTRO;
 
 public class FiltroProductoPrecioDesc implements Task {
 

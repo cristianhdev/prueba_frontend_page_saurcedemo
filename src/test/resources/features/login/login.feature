@@ -1,10 +1,8 @@
 #language:es
-@LoginSuite @Regression
+@regression
 Característica: Login Usuario
 
-
-  #Caso 001
-  @LoginUsuario
+  @login
   Escenario: Login usuario exitoso.
     Dado que el usuario se encuentra en la página del login
     Cuando ingrese las credenciales
@@ -12,8 +10,7 @@ Característica: Login Usuario
       | standard_user | secret_sauce |
     Entonces se debe acceder correctamente a su cuenta
 
-    #Caso 002
-  @CampoUserNameVacio
+  @vacio-username
   Escenario: Login usuario campo username vacio.
     Dado que el usuario se encuentra en la página del login
     Cuando ingrese las credenciales
@@ -21,8 +18,8 @@ Característica: Login Usuario
       |          | secret_sauce |
     Entonces se deber visualizar el mensaje "Epic sadface: Username is required"
 
-#Caso 003
-  @CampoPasswordVacio
+
+  @vacio-password
   Escenario: Login usuario campo password vacio.
     Dado que el usuario se encuentra en la página del login
     Cuando ingrese las credenciales
@@ -30,8 +27,8 @@ Característica: Login Usuario
       | standard_user |          |
     Entonces se deber visualizar el mensaje "Epic sadface: Password is required"
 
- #Caso 004
-  @LoginUsuarioNoRegistrado
+
+  @usuario-invalido
   Escenario: Login usuario no registrado.
     Dado que el usuario se encuentra en la página del login
     Cuando ingrese las credenciales
@@ -39,8 +36,8 @@ Característica: Login Usuario
       | tomas    | epic     |
     Entonces se deber visualizar el mensaje "Epic sadface: Username and password do not match any user in this service"
 
-    #Caso 005
-  @LoginUsuarioBloqueado
+
+  @usuario-bloqueado
   Escenario: Login usuario bloqueado.
     Dado que el usuario se encuentra en la página del login
     Cuando ingrese las credenciales

@@ -11,7 +11,7 @@ public class AbrirNavegador implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Open.browserOn().the(HomePageUI.class)
+                Open.browserOn().thePageNamed("pages.base.url")
         );
     }
 

@@ -10,11 +10,11 @@ import io.cucumber.java.es.Entonces;
 import java.util.List;
 import java.util.Map;
 
-import static com.saucedemo.UI.carrito.CarritoUI.*;
+import static com.saucedemo.UI.carrito.CarritoUI.LBL_CONFIRMACION_COMPRA;
 import static com.saucedemo.helpers.MensajesValidacion.mensajeConfirmacionCompra;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.containsString;
 
 public class CheckOutStepDefinition {
 

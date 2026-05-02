@@ -21,9 +21,8 @@ public class ClickElemento implements Interaction {
     @Override
     @Step("{0} hace clic el '#elemento'")
     public <T extends Actor> void performAs(T actor) {
-        System.out.println("click elemento:"+ this.elemento.getName());
 
-            actor.attemptsTo(
+        actor.attemptsTo(
                     WaitUntil.the(this.elemento, isVisible()).forNoMoreThan(25).seconds(),
                     Click.on(this.elemento)
             );

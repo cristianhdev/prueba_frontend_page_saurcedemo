@@ -19,9 +19,9 @@ import org.openqa.selenium.WebDriver;
 import java.util.Map;
 
 import static com.saucedemo.UI.login.HomePageUI.LBL_LOGOUT_VALIDACION;
-import static com.saucedemo.UI.login.LoginPageUI.*;
+import static com.saucedemo.UI.login.LoginPageUI.LBL_LOGIN_VALIDACION;
+import static com.saucedemo.UI.login.LoginPageUI.LBL_VALIDACION_ERROR_MESSAGE;
 import static com.saucedemo.helpers.MensajesValidacion.mensajeValidacionLogin;
-
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.CoreMatchers.equalTo;

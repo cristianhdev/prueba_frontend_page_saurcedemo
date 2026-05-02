@@ -5,12 +5,10 @@ import net.serenitybdd.annotations.Step;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import static com.saucedemo.UI.carrito.CarritoUI.BTN_ELIMINAR_PRODUCTO_CARRITO;
-import static com.saucedemo.UI.carrito.CarritoUI.LBL_PAGINA_CARRITO_VALIDACION;
-import static com.saucedemo.UI.producto.ProductoDetalleUI.*;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
+import static com.saucedemo.UI.producto.ProductoDetalleUI.BTN_AGREGAR_PRODUCTO_CARRITO;
+import static com.saucedemo.UI.producto.ProductoDetalleUI.ICON_CARRITO_COMPRA;
+
 
 public class AgregarCarrito implements Task {
 

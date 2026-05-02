@@ -10,15 +10,12 @@ public class CarritoUI {
 
     public static final Target LBL_PAGINA_CARRITO_VALIDACION = Target.the("Label confirmación pagina carrito").located(By.cssSelector("[data-test='title']"));
 
-    public static final Target BTN_ELIMINAR_PRODUCTO_CARRITO = Target.the("eliminar producto carrito").located(By.xpath("//*[contains(text(),'Remove')]"));
+    public static final Target BTN_ELIMINAR_PRODUCTO_CARRITO = Target.the("eliminar producto carrito").locatedBy("[data-test='remove-{0}']");
 
     public static final Target BTN_CHECKOUT_CARRITO = Target.the("checkout carrito").located(By.cssSelector("[data-test='checkout']"));
 
     public static final Target LBL_PAGINA_CHECKOUT_VALIDACION = Target.the("Label confirmación pagina checkout").located(By.cssSelector("[data-test='title']"));
 
-    public static final Target PAGINA_CHECKOUT_VALIDACION_TITULO_PRODUCTO = Target.the("Label confirmación titulo producto pagina checkout").located(By.cssSelector("[data-test='inventory-item-name']"));
-
-    public static final Target PAGINA_CHECKOUT_VALIDACION_PRECIO_PRODUCTO = Target.the("Label confirmación precio producto pagina checkout").located(By.cssSelector("[data-test='inventory-item-price']"));
 
     //formulario checkout
 

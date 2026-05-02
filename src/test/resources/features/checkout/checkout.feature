@@ -1,5 +1,5 @@
 #language:es
-@ProductoSuite @smoke
+@checkout @smoke
 Característica: Compra completa producto
 
   Antecedentes: Login usuario exitoso.
@@ -8,8 +8,8 @@ Característica: Compra completa producto
       | username      | password     |
       | standard_user | secret_sauce |
 
-    @CheckOutProducto
-    Escenario: checkout producto
+  @checkout-producto
+    Escenario: usuario realiza checkout producto
       Cuando el usuario seleccione un producto
       Y lo agrega al carrito de compras
       Y complete el formulario de compra
